@@ -5,3 +5,5 @@
 {% else %}
   <a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">Login with Twitter</a>
 {% endif %}
+
+<a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
